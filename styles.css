@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --body-font: "Figtree", sans-serif;
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 42%);
+  --dark-gray: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  font-size: 0.93rem;
+  font-family: var(--body-font);
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.card-container {
+  width: max(20%, 20rem);
+  background-color: var(--white);
+  text-align: center;
+  border: black solid 1px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 0px 0px rgb(0, 0, 0);
+  -webkit-box-shadow: 7px 7px 0px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 7px 7px 0px 0px rgb(0, 0, 0);
+}
+
+.img-block img {
+  display: block;
+  max-width: 90%;
+  margin: auto;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+  cursor: pointer;
+}
+
+.info-block {
+  padding: 1rem;
+  text-align: left;
+  gap: 0.7rem;
+}
+
+.status-tag {
+  background-color: var(--yellow);
+  font-weight: 800;
+  font-size: 0.7rem;
+  padding: 0.2rem 0;
+  border-radius: 0.3rem;
+  width: 4rem;
+  text-align: center;
+}
+.publish-date {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.info-block h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.info-block h2:hover {
+  color: var(--yellow);
+}
+
+.info-block p {
+  margin: 1.2rem 0;
+  word-spacing: 1px;
+  color: var(--light-gray);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.avatar img {
+  width: 2rem;
+  cursor: pointer;
+}
+.avatar-name {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
